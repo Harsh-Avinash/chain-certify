@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Credentials on Blockchain</title>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.3.5/dist/web3.min.js"></script>
+</head>
+
+<body>
+    <!-- University Interface -->
+    <section>
+        <h2>University Interface</h2>
+        <input type="text" id="uniName" placeholder="University Name">
+        <button onclick="createUniversity()">Create University Profile</button>
+        <input type="text" id="studentAddress" placeholder="Student Address">
+        <textarea id="certificateDetails" placeholder="Certificate Details"></textarea>
+        <button onclick="issueCertificate()">Issue Certificate</button>
+    </section>
+
+    <!-- Student Interface -->
+    <section>
+        <h2>Student Interface</h2>
+        <input type="text" id="studentName" placeholder="Student Name">
+        <button onclick="createStudent()">Create Student Profile</button>
+    </section>
+
+    <!-- Check Certificate -->
+    <section>
+        <h2>Verify Certificate</h2>
+        <input type="text" id="certId" placeholder="Certificate ID">
+        <button onclick="checkCertificate()">Check Certificate</button>
+        <div id="certificateOutput"></div>
+    </section>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
